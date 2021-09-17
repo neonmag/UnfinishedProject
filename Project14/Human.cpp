@@ -83,6 +83,11 @@ int Human::GetVisits()
 	return this->visits;
 }
 
+int Human::GetCountOfBooks()
+{
+	return this->countOfBooks;
+}
+
 void Human::SetSurname(const char* surname)
 {
 	if (this->surname != nullptr)
@@ -106,6 +111,11 @@ void Human::SetId(const char* id)
 void Human::SetVisits(int visits)
 {
 	this->visits = visits;
+}
+
+void Human::SetCountOfBooks(int countOFBooks)
+{
+	this->countOfBooks = countOfBooks;
 }
 
 Human::~Human()

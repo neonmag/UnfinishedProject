@@ -4,7 +4,7 @@ class Human
 	char* surname;
 	char* id;
 	int visits;
-	int countOfBooks;
+	int countOfBooks = 0;
 public:
 	Human() = default;
 	Human(int countOfBooks);
@@ -17,8 +17,10 @@ public:
 	const char* GetSurname();
 	const char* GetId();
 	int GetVisits();
+	int GetCountOfBooks();
 	void SetSurname(const char* surname);
 	void SetId(const char * id);
 	void SetVisits(int visits);
+	void SetCountOfBooks(int countOFBooks);
 	~Human();
 };

@@ -18,7 +18,7 @@ public:
 	const char* GetAuthor();
 	const char* GetGenre();
 	bool GetPresent();
-	void SetName(const char* name);
+	void SetName(const char* name = "123");
 	void SetGenre(const char* genre);
 	void SetAuthor(const char* author);
 	void SetPresent(bool present);

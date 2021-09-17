@@ -124,6 +124,14 @@ bool Book::GetPresent()
 
 void Book::SetName(const char * name)
 {
+	if (this->name != name)
+	{
+		delete[]this->name;
+		this->name = nullptr;
+		cout << "\nEnter book name: ";
+		this->name = new char[20];
+		cin.getline(this->name, 19);
+	}
 	if (this->name != nullptr)
 	{
 		delete[]this->name;
